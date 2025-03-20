@@ -35,5 +35,6 @@ WORKDIR /app
 # Expose any ports if needed
 # EXPOSE 8080
 
+RUN mkdir -p logs
 # Run the application
-CMD ["./logging-service"]
+CMD ["sh", "-c", "./logging-service | tee logs/service.log"]
