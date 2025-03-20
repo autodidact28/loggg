@@ -1,0 +1,33 @@
+✅ Golang Logging Service Running on Linux...
+[AuthService] [INFO] 2025-03-20T10:50:19Z: Authentication successful
+2025/03/20 10:50:19 [AuthService] [INFO] 2025-03-20T10:50:19Z: Authentication successful
+[DatabaseService] [WARN] 2025-03-20T10:50:19Z: Database connection is slow
+2025/03/20 10:50:19 [DatabaseService] [WARN] 2025-03-20T10:50:19Z: Database connection is slow
+[APIService] [DEBUG] 2025-03-20T10:50:19Z: API response time is normal
+2025/03/20 10:50:19 [APIService] [DEBUG] 2025-03-20T10:50:19Z: API response time is normal
+[AuthService] [ERROR] 2025-03-20T10:50:19Z: Failed to authenticate user
+2025/03/20 10:50:19 [AuthService] [ERROR] 2025-03-20T10:50:19Z: Failed to authenticate user
+[AuthService] [INFO] 2025-03-20T10:50:24Z: Authentication successful
+2025/03/20 10:50:24 [AuthService] [INFO] 2025-03-20T10:50:24Z: Authentication successful
+[DatabaseService] [WARN] 2025-03-20T10:50:24Z: Database connection is slow
+2025/03/20 10:50:24 [DatabaseService] [WARN] 2025-03-20T10:50:24Z: Database connection is slow
+[APIService] [DEBUG] 2025-03-20T10:50:24Z: API response time is normal
+2025/03/20 10:50:24 [APIService] [DEBUG] 2025-03-20T10:50:24Z: API response time is normal
+[AuthService] [ERROR] 2025-03-20T10:50:24Z: Failed to authenticate user
+2025/03/20 10:50:24 [AuthService] [ERROR] 2025-03-20T10:50:24Z: Failed to authenticate user
+[AuthService] [INFO] 2025-03-20T10:50:29Z: Authentication successful
+2025/03/20 10:50:29 [AuthService] [INFO] 2025-03-20T10:50:29Z: Authentication successful
+[DatabaseService] [WARN] 2025-03-20T10:50:29Z: Database connection is slow
+2025/03/20 10:50:29 [DatabaseService] [WARN] 2025-03-20T10:50:29Z: Database connection is slow
+[APIService] [DEBUG] 2025-03-20T10:50:29Z: API response time is normal
+2025/03/20 10:50:29 [APIService] [DEBUG] 2025-03-20T10:50:29Z: API response time is normal
+[AuthService] [ERROR] 2025-03-20T10:50:29Z: Failed to authenticate user
+2025/03/20 10:50:29 [AuthService] [ERROR] 2025-03-20T10:50:29Z: Failed to authenticate user
+[AuthService] [INFO] 2025-03-20T10:50:34Z: Authentication successful
+2025/03/20 10:50:34 [AuthService] [INFO] 2025-03-20T10:50:34Z: Authentication successful
+[DatabaseService] [WARN] 2025-03-20T10:50:34Z: Database connection is slow
+2025/03/20 10:50:34 [DatabaseService] [WARN] 2025-03-20T10:50:34Z: Database connection is slow
+[APIService] [DEBUG] 2025-03-20T10:50:34Z: API response time is normal
+2025/03/20 10:50:34 [APIService] [DEBUG] 2025-03-20T10:50:34Z: API response time is normal
+[AuthService] [ERROR] 2025-03-20T10:50:34Z: Failed to authenticate user
+2025/03/20 10:50:34 [AuthService] [ERROR] 2025-03-20T10:50:34Z: Failed to authenticate user

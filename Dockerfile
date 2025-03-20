@@ -24,6 +24,7 @@ FROM kalilinux/kali-rolling
 # Install necessary runtime dependencies
 RUN apt-get update && apt-get install -y \
     curl \
+    awscli \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy the built executable from the builder stage
@@ -36,5 +37,6 @@ WORKDIR /app
 # EXPOSE 8080
 
 RUN mkdir -p logs
-# Run the application
-CMD ["sh", "-c", "./logging-service | tee logs/service.log"]
+
+# Run the application for 20 seconds, then upload logs to S3
+CMD ["sh", "-c", "timeout 20 ./logging-service | tee logs/service.log; aws s3 sync logs s3://wecredit/"]
