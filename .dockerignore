@@ -1,0 +1,14 @@
+# Ignore build artifacts
+*.out
+*.log
+*.tmp
+*.bak
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore directories
+logs/
+node_modules/
+.git/
