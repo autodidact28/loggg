@@ -16,9 +16,16 @@ const (
 	ERROR = "ERROR"
 )
 
-// Get log file path for Linux
+// Service names
+const (
+	AUTH_SERVICE  = "AuthService"
+	DB_SERVICE    = "DatabaseService"
+	API_SERVICE   = "APIService"
+)
+
+// Get log file path for user directory
 func getLogFilePath() string {
-	return "/var/log/app/app.log"
+	return os.ExpandEnv("$HOME/Tools/my/go-log-service/app.log")
 }
 
 // Ensure log directory exists
@@ -28,8 +35,8 @@ func ensureLogDirectory(logFilePath string) error {
 }
 
 // Log message to both file and terminal
-func logMessage(level, message string) {
-	logMsg := fmt.Sprintf("[%s] %s: %s", level, time.Now().Format(time.RFC3339), message)
+func logMessage(service, level, message string) {
+	logMsg := fmt.Sprintf("[%s] [%s] %s: %s", service, level, time.Now().Format(time.RFC3339), message)
 	fmt.Println(logMsg) // Print to terminal
 	log.Println(logMsg) // Write to log file
 }
@@ -57,10 +64,10 @@ func main() {
 
 	// Log messages every 5 seconds
 	for {
-		logMessage(INFO, "Application is running")
-		logMessage(WARN, "This is a warning message")
-		logMessage(DEBUG, "Debugging application state")
-		logMessage(ERROR, "An error occurred in the application")
+		logMessage(AUTH_SERVICE, INFO, "Authentication successful")
+		logMessage(DB_SERVICE, WARN, "Database connection is slow")
+		logMessage(API_SERVICE, DEBUG, "API response time is normal")
+		logMessage(AUTH_SERVICE, ERROR, "Failed to authenticate user")
 		time.Sleep(5 * time.Second)
 	}
 }
